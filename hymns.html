@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#594325",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#ffb3af",
+              "secondary-fixed-dim": "#bfc7d4",
+              "tertiary-fixed-dim": "#e2c19b",
+              "tertiary-fixed": "#ffddb6",
+              "secondary-container": "#d8e0ed",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#5b636e",
+              "on-background": "#1c1c18",
+              "on-primary-container": "#ffaba6",
+              "surface-container-low": "#f6f3ec",
+              "tertiary": "#493417",
+              "inverse-on-surface": "#f3f0ea",
+              "surface-container": "#f0eee7",
+              "on-surface": "#1c1c18",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#dbbb95",
+              "inverse-surface": "#31312c",
+              "surface-tint": "#a23c3b",
+              "secondary-fixed": "#dbe3f0",
+              "on-secondary-fixed": "#141c25",
+              "on-surface-variant": "#564240",
+              "surface-dim": "#dcdad3",
+              "tertiary-container": "#624a2c",
+              "background": "#fcf9f2",
+              "primary-container": "#8d2d2d",
+              "surface-container-highest": "#e5e2db",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#ffdad7",
+              "surface-container-high": "#ebe8e1",
+              "on-primary-fixed-variant": "#822526",
+              "secondary": "#575f6a",
+              "surface": "#fcf9f2",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "primary": "#6e1619",
+              "on-tertiary-fixed": "#291801",
+              "outline": "#897170",
+              "on-primary-fixed": "#410005",
+              "on-secondary-fixed-variant": "#3f4752",
+              "surface-variant": "#e5e2db",
+              "inverse-primary": "#ffb3af",
+              "outline-variant": "#ddc0be",
+              "surface-bright": "#fcf9f2",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Public Sans"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f2;
+            color: #1c1c18;
+            -webkit-font-smoothing: antialiased;
+        }
+        .parchment-texture {
+            background-image: radial-gradient(#e5e2db 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.15;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-[#fcf9f2] dark:bg-[#31312c] border-none">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-[#e5e2db]/50 dark:hover:bg-white/5 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#6e1619] dark:text-[#ddc0be]" data-icon="menu">menu</span>
+</button>
+<h1 class="font-['Newsreader'] italic tracking-wide text-2xl text-[#6e1619] dark:text-[#ddc0be]">Himnario El Buen Pastor</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 hover:bg-[#e5e2db]/50 dark:hover:bg-white/5 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#6e1619] dark:text-[#ddc0be]" data-icon="search">search</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="pt-20 pb-28 px-4 md:px-8 max-w-3xl mx-auto relative min-h-screen">
+<!-- Search & Filter Cluster (Integrated) -->
+<section class="mb-10 mt-4 space-y-6">
+<div class="bg-surface-container-low p-1 rounded-lg flex items-center px-4 shadow-sm">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="w-full bg-transparent border-none focus:ring-0 py-3 px-3 text-on-surface placeholder:text-outline-variant font-body" placeholder="Buscar por número o título..." type="text"/>
+<button class="p-1 hover:bg-surface-container-highest rounded">
+<span class="material-symbols-outlined text-outline" data-icon="tune">tune</span>
+</button>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+<span class="bg-primary text-on-primary px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Todos</span>
+<span class="bg-surface-container-highest text-on-surface px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Adoración</span>
+<span class="bg-surface-container-highest text-on-surface px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Evangelismo</span>
+<span class="bg-surface-container-highest text-on-surface px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Santidad</span>
+<span class="bg-surface-container-highest text-on-surface px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Oración</span>
+</div>
+</section>
+<!-- Hymn List -->
+<div class="space-y-1">
+<!-- Hymn Item 1 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">1</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">¡Santo! ¡Santo! ¡Santo!</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Solemne • Adoración</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Hymn Item 2 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">15</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">¡Cuán Grande es Él!</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Alabanza • Tradicional</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Hymn Item 3 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">42</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">Grande es Tu Fidelidad</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Confianza • Devocional</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Hymn Item 4 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">108</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">Gracia Admirable</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Testimonio • Fe</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Hymn Item 5 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">215</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">En el Monte Calvario</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Crucifixión • Redención</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Hymn Item 6 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">340</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">Roca de la Eternidad</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Protección • Clásico</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+<!-- Hymn Item 7 -->
+<a class="group block py-5 px-4 hover:bg-surface-container-low transition-colors duration-200 active:scale-95 transition-transform" href="#">
+<div class="flex items-baseline gap-6">
+<span class="font-headline font-extrabold text-2xl text-primary w-12 shrink-0">452</span>
+<div class="space-y-1">
+<h2 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors italic">A Solas al Huerto Yo Voy</h2>
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed uppercase tracking-widest">Comunión • Intimidad</p>
+</div>
+</div>
+</a>
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+</div>
+<!-- Decorative Quote/Section Break -->
+<div class="py-20 text-center opacity-30 select-none pointer-events-none">
+<span class="material-symbols-outlined text-4xl text-primary block mb-4" data-icon="auto_awesome">auto_awesome</span>
+<p class="font-headline italic text-lg max-w-xs mx-auto">"Cantad alegres a Dios, habitantes de toda la tierra."</p>
+<p class="font-body text-xs mt-2 uppercase tracking-tighter">Salmo 100:1</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f2]/90 dark:bg-[#31312c]/90 backdrop-blur-xl border-none">
+<a class="flex flex-col items-center justify-center text-[#1c1c18]/60 dark:text-[#e5e2db]/60 hover:text-[#6e1619] dark:hover:text-[#fcf9f2] transition-colors active:scale-95 transition-transform" href="index.html">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#6e1619] dark:text-[#fcf9f2] font-semibold transition-transform active:scale-95" href="hymns.html">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Himnos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c18]/60 dark:text-[#e5e2db]/60 hover:text-[#6e1619] dark:hover:text-[#fcf9f2] transition-colors active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Favoritos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c18]/60 dark:text-[#e5e2db]/60 hover:text-[#6e1619] dark:hover:text-[#fcf9f2] transition-colors active:scale-95 transition-transform" href="settings.html">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Ajustes</span>
+</a>
+</nav>
+<!-- Floating Action Button (Optional Contextual Accessory) -->
+<div class="fixed right-6 bottom-24 z-40">
+<button class="w-14 h-14 bg-gradient-to-br from-[#6e1619] to-[#8d2d2d] text-white rounded-full shadow-lg flex items-center justify-center transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</body></html>
