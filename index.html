@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Himnario El Buen Pastor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed-variant": "#594325",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#ffb3af",
+              "secondary-fixed-dim": "#bfc7d4",
+              "tertiary-fixed-dim": "#e2c19b",
+              "tertiary-fixed": "#ffddb6",
+              "secondary-container": "#d8e0ed",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#5b636e",
+              "on-background": "#1c1c18",
+              "on-primary-container": "#ffaba6",
+              "surface-container-low": "#f6f3ec",
+              "tertiary": "#493417",
+              "inverse-on-surface": "#f3f0ea",
+              "surface-container": "#f0eee7",
+              "on-surface": "#1c1c18",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#dbbb95",
+              "inverse-surface": "#31312c",
+              "surface-tint": "#a23c3b",
+              "secondary-fixed": "#dbe3f0",
+              "on-secondary-fixed": "#141c25",
+              "on-surface-variant": "#564240",
+              "surface-dim": "#dcdad3",
+              "tertiary-container": "#624a2c",
+              "background": "#fcf9f2",
+              "primary-container": "#8d2d2d",
+              "surface-container-highest": "#e5e2db",
+              "on-error-container": "#93000a",
+              "primary-fixed": "#ffdad7",
+              "surface-container-high": "#ebe8e1",
+              "on-primary-fixed-variant": "#822526",
+              "secondary": "#575f6a",
+              "surface": "#fcf9f2",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "primary": "#6e1619",
+              "on-tertiary-fixed": "#291801",
+              "outline": "#897170",
+              "on-primary-fixed": "#410005",
+              "on-secondary-fixed-variant": "#3f4752",
+              "surface-variant": "#e5e2db",
+              "inverse-primary": "#ffb3af",
+              "outline-variant": "#ddc0be",
+              "surface-bright": "#fcf9f2",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Public Sans"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Public Sans', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Newsreader', serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24 overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-[#fcf9f2] dark:bg-[#31312c]">
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-[#e5e2db]/50 dark:hover:bg-white/5 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#6e1619] dark:text-[#ddc0be]" data-icon="menu">menu</span>
+</button>
+<h1 class="font-['Newsreader'] italic tracking-wide text-2xl text-[#6e1619] dark:text-[#ddc0be]">
+                Himnario El Buen Pastor
+            </h1>
+</div>
+<button class="p-2 hover:bg-[#e5e2db]/50 dark:hover:bg-white/5 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#6e1619] dark:text-[#ddc0be]" data-icon="search">search</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Search Section -->
+<section class="w-full">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-low border-none rounded-xl text-on-surface focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-outline/60 placeholder:font-light" placeholder="Buscar himno por número o título" type="text"/>
+</div>
+</section>
+<!-- Featured Action: Bento-style Hero -->
+<section>
+<a href="hymns.html" class="relative w-full overflow-hidden block group rounded-xl aspect-[16/7] flex items-center justify-start p-8 bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-xl shadow-primary/10 transition-transform active:scale-[0.98]">
+<!-- Subtle texture overlay -->
+<div class="absolute inset-0 opacity-10 mix-blend-overlay pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/pinstriped-suit.png')]" data-alt="Subtle fabric texture overlay"></div>
+<div class="relative z-10 flex flex-col items-start text-left">
+<span class="material-symbols-outlined text-4xl mb-3" data-icon="auto_stories">auto_stories</span>
+<h2 class="text-3xl font-headline font-semibold italic mb-1">Ver todos los himnos</h2>
+<p class="text-sm font-body opacity-80 tracking-wide uppercase font-medium">Explorar colección completa</p>
+</div>
+<div class="absolute right-[-20px] bottom-[-20px] opacity-10">
+<span class="material-symbols-outlined text-[180px]" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+</a>
+</section>
+<!-- Quick Access Grid -->
+<section class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-5 rounded-xl flex flex-col items-start gap-4 hover:bg-surface-container-high transition-colors cursor-pointer group active:scale-[0.98] transition-transform">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="list_alt">list_alt</span>
+</div>
+<span class="font-body font-semibold text-sm">Índice Temático</span>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col items-start gap-4 hover:bg-surface-container-high transition-colors cursor-pointer group active:scale-[0.98] transition-transform">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="bookmark" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</div>
+<span class="font-body font-semibold text-sm">Favoritos</span>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col items-start gap-4 hover:bg-surface-container-high transition-colors cursor-pointer group active:scale-[0.98] transition-transform">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</div>
+<div class="flex justify-between w-full items-center">
+<span class="font-body font-semibold text-sm">Modo Oscuro</span>
+<div class="w-8 h-4 bg-outline-variant/30 rounded-full relative">
+<div class="absolute left-1 top-1 w-2 h-2 bg-on-surface-variant rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col items-start gap-4 hover:bg-surface-container-high transition-colors cursor-pointer group active:scale-[0.98] transition-transform">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</div>
+<span class="font-body font-semibold text-sm">Ajustes</span>
+</div>
+</section>
+<!-- Himnos Recientes Section -->
+<section class="space-y-6">
+<div class="flex items-baseline justify-between">
+<h3 class="text-2xl font-headline font-bold text-primary italic">Himnos Recientes</h3>
+<span class="text-xs font-body font-bold text-outline uppercase tracking-widest">Historial</span>
+</div>
+<div class="space-y-2">
+<!-- List items without border dividers as per system constraint -->
+<a href="hymn_detail.html" class="flex items-center gap-6 py-3 px-2 rounded-lg hover:bg-surface-container-low transition-colors group cursor-pointer">
+<span class="text-2xl font-headline font-bold text-primary/40 group-hover:text-primary transition-colors min-w-[2rem]">1</span>
+<div class="flex-1">
+<p class="font-body text-lg font-medium text-on-surface">Grande es Tu fidelidad</p>
+<p class="text-xs font-body text-outline uppercase tracking-wider">Himnos de Alabanza</p>
+</div>
+<span class="material-symbols-outlined text-outline/30 text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+<a href="hymn_detail.html" class="flex items-center gap-6 py-3 px-2 rounded-lg hover:bg-surface-container-low transition-colors group cursor-pointer">
+<span class="text-2xl font-headline font-bold text-primary/40 group-hover:text-primary transition-colors min-w-[2rem]">142</span>
+<div class="flex-1">
+<p class="font-body text-lg font-medium text-on-surface">Castillo fuerte es nuestro Dios</p>
+<p class="text-xs font-body text-outline uppercase tracking-wider">Himnos de Fe</p>
+</div>
+<span class="material-symbols-outlined text-outline/30 text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+<a href="hymn_detail.html" class="flex items-center gap-6 py-3 px-2 rounded-lg hover:bg-surface-container-low transition-colors group cursor-pointer">
+<span class="text-2xl font-headline font-bold text-primary/40 group-hover:text-primary transition-colors min-w-[2rem]">85</span>
+<div class="flex-1">
+<p class="font-body text-lg font-medium text-on-surface">Sublime Gracia</p>
+<p class="text-xs font-body text-outline uppercase tracking-wider">Himnos de Salvación</p>
+</div>
+<span class="material-symbols-outlined text-outline/30 text-sm" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f2]/90 dark:bg-[#31312c]/90 backdrop-blur-xl">
+<!-- Active Tab: Inicio -->
+<a class="flex flex-col items-center justify-center text-[#6e1619] dark:text-[#fcf9f2] font-semibold Active: scale-95 transition-transform active:scale-95 transition-transform" href="index.html">
+<span class="material-symbols-outlined mb-1" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c18]/60 dark:text-[#e5e2db]/60 hover:text-[#6e1619] dark:hover:text-[#fcf9f2] Active: scale-95 transition-transform active:scale-95 transition-transform" href="hymns.html">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Himnos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c18]/60 dark:text-[#e5e2db]/60 hover:text-[#6e1619] dark:hover:text-[#fcf9f2] Active: scale-95 transition-transform active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="bookmark">bookmark</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Favoritos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c18]/60 dark:text-[#e5e2db]/60 hover:text-[#6e1619] dark:hover:text-[#fcf9f2] Active: scale-95 transition-transform active:scale-95 transition-transform" href="settings.html">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-['Public_Sans'] text-[11px] font-medium tracking-tight">Ajustes</span>
+</a>
+</nav>
+</body></html>
